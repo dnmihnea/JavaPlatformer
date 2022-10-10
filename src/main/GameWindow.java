@@ -11,6 +11,7 @@ public class GameWindow{
 		jframe.setSize(400, 400); //set window height and width in pixels
 		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //terminate windows when you click close
 		jframe.add(gamePanel); //add panel to window
+		jframe.setLocationRelativeTo(null); //spawns window in the center of the screen
 		jframe.setVisible(true); //make window visible
 		
 	}
