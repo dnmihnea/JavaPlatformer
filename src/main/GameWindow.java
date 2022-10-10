@@ -2,19 +2,17 @@ package main;
 
 import javax.swing.JFrame;
 
-public class GameWindow {
+public class GameWindow{
 	private JFrame jframe;
-
 	public GameWindow(GamePanel gamePanel) {
-
-		jframe = new JFrame();
-
-		jframe.setSize(400, 400);
-		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		jframe.add(gamePanel);
-		jframe.setLocationRelativeTo(null);
-		jframe.setVisible(true);
-
+		
+		jframe = new JFrame(); //create window
+		
+		jframe.setSize(400, 400); //set window height and width in pixels
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //terminate windows when you click close
+		jframe.add(gamePanel); //add panel to window
+		jframe.setLocationRelativeTo(null); //spawns window in the center of the screen
+		jframe.setVisible(true); //make window visible
+		
 	}
-
 }
